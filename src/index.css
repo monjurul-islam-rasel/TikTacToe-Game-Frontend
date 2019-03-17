@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sansation;
+  background-color: aqua;
+}
+
+* {
+  box-sizing: border-box;
+}
+

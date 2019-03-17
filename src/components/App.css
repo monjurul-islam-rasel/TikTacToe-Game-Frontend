@@ -1,0 +1,63 @@
+.board.won-row0 .row0 .symbol,
+.board.won-row1 .row1 .symbol,
+.board.won-row2 .row2 .symbol,
+.board.won-column0 .symbol.column0,
+.board.won-column1 .symbol.column1,
+.board.won-column2 .symbol.column2,
+.board.won-leftSlant .row0 .symbol.column0,
+.board.won-leftSlant .row1 .symbol.column1,
+.board.won-leftSlant .row2 .symbol.column2,
+.board.won-rightSlant .row0 .symbol.column2,
+.board.won-rightSlant .row1 .symbol.column1,
+.board.won-rightSlant .row2 .symbol.column0 {
+  background-color: green;
+}
+
+.board.draw .symbol {
+  background-color: yellow;
+}
+
+.row {
+  display: flex;
+}
+
+@keyframes symbol-appear {
+  from {
+    transform: scale(1.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+svg {
+  animation-name: symbol-appear;
+  animation-duration: .15s;
+}
+
+.button {
+  background-color:hsl(14, 100%, 57%);
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: white;
+}
+
+th, td {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
